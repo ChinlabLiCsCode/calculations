@@ -1,0 +1,91 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2807,         83]
+NotebookOptionsPosition[      2148,         64]
+NotebookOutlinePosition[      2544,         80]
+CellTagsIndexPosition[      2501,         77]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rWire", "=", 
+   RowBox[{"0.0500", "*", 
+    RowBox[{"30", "/", "1000"}]}]}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"in", " ", "Ohms"}], ",", " ", 
+    RowBox[{"assuming", " ", "30", " ", "ft", " ", "wire"}]}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lWire", "=", 
+   RowBox[{"13", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "6"}]]}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"in", " ", "Henries"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"curr", "=", "270"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"rWire", "*", "curr"}]}], "Input",
+ CellChangeTimes->{{3.901890076898539*^9, 3.901890117561604*^9}, {
+  3.90189021615552*^9, 3.90189026106141*^9}, {3.9018904093509073`*^9, 
+  3.9018904342807617`*^9}, {3.901890485091638*^9, 3.901890495332024*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"e0a56112-88fc-43d8-a17c-5ef86b2b9a9d"],
+
+Cell[BoxData["0.0015`"], "Output",
+ CellChangeTimes->{3.901890229926846*^9, 3.901890413089713*^9, 
+  3.9018904955394297`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"63c09e26-7d33-451c-b89a-8a02d75d7a84"],
+
+Cell[BoxData[
+ FractionBox["13", "1000000"]], "Output",
+ CellChangeTimes->{3.901890229926846*^9, 3.901890413089713*^9, 
+  3.9018904955408077`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"975d9b1a-a0e3-4a4d-9c4e-b7b552b08d4f"],
+
+Cell[BoxData["0.405`"], "Output",
+ CellChangeTimes->{3.901890229926846*^9, 3.901890413089713*^9, 
+  3.901890495541892*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"0e98d469-5f23-406c-b614-5d2641707f31"]
+}, Open  ]]
+},
+WindowSize->{808, 816},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.3 for Mac OS X ARM (64-bit) (September 30, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cecfcf56-83cb-4c9e-926c-6ba78ae69d28"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 916, 23, 94, "Input",ExpressionUUID->"e0a56112-88fc-43d8-a17c-5ef86b2b9a9d"],
+Cell[1499, 47, 203, 3, 34, "Output",ExpressionUUID->"63c09e26-7d33-451c-b89a-8a02d75d7a84"],
+Cell[1705, 52, 224, 4, 51, "Output",ExpressionUUID->"975d9b1a-a0e3-4a4d-9c4e-b7b552b08d4f"],
+Cell[1932, 58, 200, 3, 34, "Output",ExpressionUUID->"0e98d469-5f23-406c-b614-5d2641707f31"]
+}, Open  ]]
+}
+]
+*)
+

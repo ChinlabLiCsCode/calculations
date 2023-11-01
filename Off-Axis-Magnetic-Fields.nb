@@ -1,0 +1,233 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8261,        225]
+NotebookOptionsPosition[      7688,        207]
+NotebookOutlinePosition[      8086,        223]
+CellTagsIndexPosition[      8043,        220]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Alpha]", "=", 
+   RowBox[{"r", "/", "a"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Beta]", "=", 
+   RowBox[{"x", "/", "a"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Gamma]", "=", 
+   RowBox[{"x", "/", "r"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Q", "=", 
+   RowBox[{"Floor", "[", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", "\[Alpha]"}], ")"}], "2"], "+", 
+     SuperscriptBox["\[Beta]", "2"]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.85965699025461*^9, 
+  3.859657056569208*^9}},ExpressionUUID->"cdfede64-1467-4f60-8ed5-\
+bfdbba856193"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"a", "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"b", "-", "s"}], ")"}], "^", "2"}]}]], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", 
+     RowBox[{"-", "c"}], ",", "c"}], "}"}], ",", 
+   RowBox[{"Assumptions", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", ">", "0"}], ",", 
+      RowBox[{"b", "\[Element]", "Reals"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.859742570288002*^9, 3.859742616896809*^9}, {
+  3.859742698822752*^9, 3.85974270583416*^9}, {3.859742743995356*^9, 
+  3.859742792152205*^9}, {3.859742827247467*^9, 3.8597428748139133`*^9}, {
+  3.859742907013679*^9, 3.859742943594191*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"5501b9e1-5bf9-4e6f-86f0-72894c67da1f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{
+      RowBox[{"-", 
+        RowBox[{"ArcTan", "[", 
+          FractionBox[
+           RowBox[{"b", "-", "c"}], 
+           SqrtBox["a"]], "]"}]}], "+", 
+      RowBox[{"ArcTan", "[", 
+        FractionBox[
+         RowBox[{"b", "+", "c"}], 
+         SqrtBox["a"]], "]"}]}], 
+    SqrtBox["a"]], 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = True}, 
+     TemplateBox[{"Expression", 
+       StyleBox[
+        TagBox[
+         TooltipBox["\"condition\"", 
+          TagBox[
+           RowBox[{
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"b", " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}], "\[NotEqual]", 
+                   RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], "||", 
+                 RowBox[{
+                   RowBox[{"1", "+", 
+                    RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}], "+", 
+                    RowBox[{"b", " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], "<", "0"}], "||", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}], "+", 
+                    RowBox[{"b", " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], ">", "1"}]}], ")"}], 
+             "&&", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"b", " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}], "+", 
+                    RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], "\[NotEqual]", "0"}], 
+                 "||", 
+                 RowBox[{
+                   RowBox[{"1", "+", 
+                    RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], "<", 
+                   RowBox[{"b", " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}], "||", 
+                 RowBox[{
+                   RowBox[{
+                    SqrtBox["a"], " ", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["1", "c"], "]"}]}], ">", 
+                   RowBox[{"1", "+", 
+                    RowBox[{"b", " ", 
+                    RowBox[{"Re", "[", 
+                    FractionBox["1", "c"], "]"}]}]}]}]}], ")"}]}], 
+           Short[#, 7]& ]], Annotation[#, 
+          Short[
+           And[
+            
+            Or[$CellContext`b 
+              Im[$CellContext`c^(-1)] != $CellContext`a^Rational[1, 2] 
+              Re[$CellContext`c^(-1)], 
+             1 + $CellContext`a^Rational[1, 2] 
+               Im[$CellContext`c^(-1)] + $CellContext`b 
+               Re[$CellContext`c^(-1)] < 
+             0, $CellContext`a^Rational[1, 2] 
+               Im[$CellContext`c^(-1)] + $CellContext`b 
+               Re[$CellContext`c^(-1)] > 1], 
+            
+            Or[$CellContext`b 
+               Im[$CellContext`c^(-1)] + $CellContext`a^Rational[1, 2] 
+               Re[$CellContext`c^(-1)] != 0, 
+             1 + $CellContext`a^Rational[1, 2] 
+               Im[$CellContext`c^(-1)] < $CellContext`b 
+              Re[$CellContext`c^(-1)], $CellContext`a^Rational[1, 2] 
+              Im[$CellContext`c^(-1)] > 
+             1 + $CellContext`b Re[$CellContext`c^(-1)]]], 7], "Tooltip"]& ], 
+        "IconizedCustomName", StripOnInput -> False], 
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["And", "IconizedItem"]}]}, {
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["3688", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+       Dynamic[Typeset`open]}, "IconizedObject"]], 
+    And[
+     Or[$CellContext`b 
+       Im[$CellContext`c^(-1)] != $CellContext`a^Rational[1, 2] 
+       Re[$CellContext`c^(-1)], 
+      1 + $CellContext`a^Rational[1, 2] 
+        Im[$CellContext`c^(-1)] + $CellContext`b Re[$CellContext`c^(-1)] < 
+      0, $CellContext`a^Rational[1, 2] 
+        Im[$CellContext`c^(-1)] + $CellContext`b Re[$CellContext`c^(-1)] > 1], 
+     Or[$CellContext`b 
+        Im[$CellContext`c^(-1)] + $CellContext`a^Rational[1, 2] 
+        Re[$CellContext`c^(-1)] != 0, 
+      1 + $CellContext`a^Rational[1, 2] 
+        Im[$CellContext`c^(-1)] < $CellContext`b 
+       Re[$CellContext`c^(-1)], $CellContext`a^Rational[1, 2] 
+       Im[$CellContext`c^(-1)] > 1 + $CellContext`b Re[$CellContext`c^(-1)]]],
+     SelectWithContents -> True, Selectable -> False]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{
+  3.859742782229138*^9, {3.859742830684589*^9, 3.8597428593101587`*^9}, 
+   3.859742905109077*^9, {3.859742944390148*^9, 3.859742970774811*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"409a5794-f3bc-4e48-b9a8-65dfef3ad456"]
+}, Open  ]]
+},
+WindowSize->{808, 816},
+WindowMargins->{{Automatic, 50}, {Automatic, 50}},
+FrontEndVersion->"12.3 for Mac OS X ARM (64-bit) (September 30, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0c9e9849-4681-4092-9718-6fc331be70b5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 696, 21, 117, "Input",ExpressionUUID->"cdfede64-1467-4f60-8ed5-bfdbba856193"],
+Cell[CellGroupData[{
+Cell[1279, 45, 794, 20, 49, "Input",ExpressionUUID->"5501b9e1-5bf9-4e6f-86f0-72894c67da1f"],
+Cell[2076, 67, 5596, 137, 125, "Output",ExpressionUUID->"409a5794-f3bc-4e48-b9a8-65dfef3ad456"]
+}, Open  ]]
+}
+]
+*)
+
